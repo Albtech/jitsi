@@ -1,12 +1,22 @@
-## Welcome to GitHub Pages
+## How To: Install Jitsi Server on Ubuntu
 
-You can use the [editor on GitHub](https://github.com/Albtech/asad/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Jitsi is a video conferencing application that is fully open source, and allows you to easily build and deploy your own video conferencing server. This guide will show you how to set up a secure Vultr hosted virtual server that runs Jitsi – you can be video conferencing in less than an hour!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Step 1: Log into your new server.
+At this point, you should have your Vultr username (root) and password from the server details.  Copy the password to your clipboard and then open up PuTTY.
+
+Enter in the IP address or hostname of your server and then click ‘Open.’
+![](https://crosstalksolutions.com/wp-content/uploads/2020/04/image-5.png)
+
+PuTTY will open up a terminal window and first ask you if you want to accept the new host (click ‘YES’).  Then you will be given a login prompt.  Use the information from the Vultr server properties:
+User:  root
+Password:  (the password from the Vultr server properties – you can do SHIFT+INS or right-click to paste it in)
+The very first thing that you should do is change your root password.
+```markdown
+sudo passwd root
+```
 
 ```markdown
 Syntax highlighted code block
